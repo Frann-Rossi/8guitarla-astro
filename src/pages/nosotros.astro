@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+import nosotros from "../img/nosotros.jpg";
+---
+
+<Layout
+	title="Nosotros"
+	description="Página de tienda de instrumentos musicales, guitarras, cursos, blog y más"
+>
+	<main class="contenedor">
+		<h1 class="heading">Nosotros</h1>
+		<div class="contenido">
+			<img src={nosotros.src} alt="Imagen sobre nosotros" />
+			<div>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex debitis
+					eligendi cumque? Incidunt quaerat sint explicabo est ab distinctio
+					aspernatur sequi accusantium. Molestiae magni asperiores ab dolores
+					delectus, praesentium laudantium.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex debitis
+					eligendi cumque? Incidunt quaerat sint explicabo est ab distinctio
+					aspernatur sequi accusantium. Molestiae magni asperiores ab dolores
+					delectus, praesentium laudantium.
+				</p>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	.contenido {
+		display: grid;
+		gap: 4rem;
+	}
+	@media (min-width: 768px) {
+		.contenido {
+			grid-template-columns: repeat(2, 1fr);
+			align-items: center;
+		}
+	}
+</style>
